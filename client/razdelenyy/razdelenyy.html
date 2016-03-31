@@ -1,0 +1,316 @@
+<template name="razdelnyy">
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter35842265 = new Ya.Metrika({
+                    id:35842265,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+    <noscript>
+        <div>
+            <img src="https://mc.yandex.ru/watch/35842265" style="position:absolute; left:-9999px;" alt="" />
+        </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74644952-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-74644952-1']);
+  _gaq.push(['_trackPageview']);
+  setTimeout("_gaq.push(['_trackEvent', '15_seconds', 'read'])",15000);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+{{>nav}}
+        {{>modal2}}
+        {{>modal3}}
+<div class="row">
+
+   <div class="col s10 offset-s1">
+       {{#each modalNewCollections}}
+                    <h3 class="center-align">{{modalHelper.tovarHeader}}</h3>
+                <div class="row">
+                <div class="col s1">
+                    <img src="{{smallImg2}}" class="responsive-img" alt="">
+                    <img src="{{smallImg2}}" class="responsive-img" alt="">
+                    <img src="{{smallImg2}}" class="responsive-img" alt="">
+                    <img src="{{smallImg2}}" class="responsive-img" alt="">
+                    <img src="{{smallImg2}}" class="responsive-img" alt="">
+                </div>
+                    <div class="col s5">
+                        <div class="mainImgModal">
+                            <img src="{{imgSrc}}" class="responsive-img" alt="" id="mainImg"></div>
+              <!--           {{#if smallImg1}}
+              <div class="modalPhoto col s3" id="modalPhoto1">
+                  <img src="{{smallImg1}}" class="responsive-img" alt="">
+                  </div>
+              {{/if}}
+                      {{#if smallImg2}}
+              <div class="modalPhoto col s3" id="modalPhoto2">
+                  <img src="{{smallImg2}}" class="responsive-img" alt=""></div>
+              {{/if}}
+                    {{#if smallImg3}}
+              <div class="modalPhoto col s3" id="modalPhoto3">
+                  <img src="{{smallImg3}}" class="responsive-img" alt=""></div>
+              {{/if}}
+                    {{#if smallImg4}}
+              <div class="modalPhoto col s3" id="modalPhoto3">
+                  <img src="{{smallImg4}}" class="responsive-img" alt=""></div>
+              {{/if}} -->
+                     
+
+                </div>
+                <form class="col s6">
+                    <div class="row">
+
+                        <div class="col s12">
+                            <h3 class="ModalTovarHeader">{{tovarHeader}}</h3>
+                            {{#if firma}}
+                            <p class="modalFirma">от {{firma}}</p>
+                            {{/if}}
+                        </div>
+                        
+                        <div class="modalBorder col s12">
+                            <p class="modalPrice">
+                                <span class="mPirce" id="mPrice">{{price}} грн.</span>
+                                <span class="mAkcii" id="mAkcii">{{akcii}} грн.</span>
+                            </p>
+                        </div>
+                            <div class="col s12">
+                            <div class="sizeColor">
+                                <p>Выберите размер (Size), а затем цвет (Color)</p>
+                            </div>
+                                
+                            </div>
+                            
+                        
+                        <div class="col s12">
+                        {{#if color1}}
+                            <div>Цвет:</div>
+                            {{/if}}
+                            <ul class="ulColor">
+                                {{#if color1}}
+                                    <li class="colorPhoto">
+                                    <img src="{{color1}}" class="" width="28" height="28"  alt=""></li>
+                                {{/if}}
+                                {{#if color2}}
+                                    <li class="colorPhoto">
+                                    <img src="{{color2}}" class="" width="28" height="28"  alt=""></li>
+                                {{/if}}
+                                {{#if color3}}
+                                    <li class="colorPhoto">
+                                    <img src="{{color3}}" class="" width="28" height="28"  alt=""></li>
+                                {{/if}}
+                                {{#if color4}}
+                                    <li class="colorPhoto">
+                                    <img src="{{color4}}" class="" width="28" height="28"  alt=""></li>
+                                {{/if}}
+                                {{#if color5}}
+                                    <li class="colorPhoto">
+                                    <img src="{{color5}}" class="" width="28" height="28"  alt=""></li>
+                                {{/if}}
+                                {{#if color6}}
+                                    <li class="colorPhoto">
+                                    <img src="{{color6}}" class="" width="28" height="28"  alt=""></li>
+                                {{/if}}
+                                {{#if color7}}
+                                    <li class="colorPhoto">
+                                    <img src="{{color7}}" class="" width="28" height="28"  alt=""></li>
+                                {{/if}}
+                                {{#if color8}}
+                                    <li class="colorPhoto">
+                                    <img src="{{color8}}" class="" width="28" height="28"  alt=""></li>
+                                {{/if}}
+                                {{#if color9}}
+                                    <li class="colorPhoto">
+                                    <img src="{{color9}}" class="" width="28" height="28"  alt=""></li>
+                                {{/if}}
+                                {{#if color10}}
+                                    <li class="colorPhoto">
+                                    <img src="{{color10}}" class="" width="28" height="28"  alt=""></li>
+                                {{/if}}
+                            </ul>
+                        </div>
+                        <div class="col s4">
+                            <label>Бюст</label>
+                            <select class="browser-default selectSizeByst">
+                                {{#if sByst}}
+                                <option value="{{s}}">{{sByst}}</option>
+                                {{/if}}
+                                    {{#if mByst}}
+                                <option value="{{m}}">{{mByst}}</option>
+                                {{/if}}
+                                    {{#if lByst}}
+                                <option value="{{l}}">{{lByst}}</option>
+                                {{/if}}
+                                    
+                                        {{#if xsByst}}
+                                        <option value="{{xsByst}}">{{xsByst}}</option>
+                                    {{/if}}
+                                    {{#if xlByst}}
+                                <option value="{{xl}}">{{xlByst}}</option>
+                                {{/if}}
+                            </select>
+                        </div>
+                        <div class="col s4">
+                            <label>Трусы</label>
+                            <select class="browser-default selectSizeTrysu">
+                                {{#if sTrysu}}
+                                <option value="{{s}}">{{sTrysu}}</option>
+                                {{/if}}
+                                    {{#if mTrysu}}
+                                <option value="{{m}}">{{mTrysu}}</option>
+                                {{/if}}
+                                    {{#if lTrysu}}
+                                <option value="{{l}}">{{lTrysu}}</option>
+                                {{/if}}
+                                      {{#if xsTrysu}}
+                                <option value="{{xsTrysu}}">{{xsTrysu}}</option>
+                                {{/if}}
+                                    {{#if xlTrysu}}
+                                <option value="{{xl}}">{{xlTrysu}}</option>
+                                {{/if}}
+                            </select>
+                        </div>
+                        <div class="col s4">
+                            <label>Количество</label>
+                            <select class="browser-default quantity">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                              <option value="11">11</option>
+                              <option value="12">12</option>
+                              <option value="13">13</option>
+                              <option value="14">14</option>
+                              <option value="15">15</option>
+                              <option value="16">16</option>
+                              <option value="17">17</option>
+                              <option value="18">18</option>
+                              <option value="19">19</option>
+                              <option value="20">20</option>
+                            </select>
+                        </div>
+                    <div class="col s12">
+                    <section class="ac-container">
+
+                        <div>
+                            <input id="ac-2" name="accordion-1" type="checkbox" />
+
+                     
+                        </div>
+                        {{#if tableSize}}
+                        <p id="tableSize" name="{{tableSize}}">Таблица размеров</p>
+                        {{/if}}
+                    </section>
+                </div>
+
+                <div class="input-field col s12">
+                    <input id="name" type="text" class="validate">
+                    <label for="name">Ваше имя</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="namber" type="text" class="validate">
+                    <label for="namber">Ваш номер</label>
+                </div>
+
+                <div class="col s12">
+                    <div class="modalButt">
+                        <span class="send">Отправить</span>
+                    </div>
+
+                </div>
+                <div class="deliveryTovar col s12" id="deliveryTovar">
+                    <p class=""><span class="charColor col s3">Доставка товара:</span> <span class="col s9">Бесплатная доставка по Киеву и Украине 1-2 дня.Отправка через несколько часов после подтверждения заказа</span></p>
+            
+                </div>
+<div class="deliveryTovar2 col s12">
+                   <p><span class="charColor col s3">Возврат товара:</span> <span class="col s9">Вы можете вернуть товар, оплатив стоимость обратной пересылки.7 дней на возврат или обмен товара без лишних вопросов и проблем.</span></p>
+            
+                </div>
+
+
+              
+            
+                <!-- <div class="col s12">
+                
+                <p>Характеристики:</p>
+                             {{#if har1}}
+                                <p>{{har1}}</p>
+                                {{/if}}
+                                            {{#if har2}}
+                                <p>{{har2}}</p>
+                                {{/if}}
+                                            {{#if har3}}
+                                <p>{{har3}}</p>
+                                {{/if}}
+                                            {{#if har4}}
+                                <p>{{har4}}</p>
+                                {{/if}}
+                                            {{#if har5}}
+                                <p>{{har5}}</p>
+                                {{/if}}
+                                            {{#if har6}}
+                                <p>{{har6}}</p>
+                                {{/if}}
+                                            {{#if har7}}
+                                <p>{{har7}}</p>
+                                {{/if}}
+                                            {{#if har8}}
+                                <p>{{har8}}</p>
+                                {{/if}}
+                </div> -->
+                
+            
+        </div>
+        
+        </form>
+        
+
+    </div>
+    {{/each}}
+   </div>
+
+</div>
+{{>footer}}
+</template>
