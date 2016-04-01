@@ -311,11 +311,16 @@ margin: 15px 0 0 0;
   padding: 20px 0;
   margin-left: 0px;
 }
-
+.razdelnyyHeader{
+  margin-top: 0;
+}
 /* .modalBorder{
   border-bottom: 1px #f5f5f5;
 } */
 .colorActive{
+  outline: 3px solid #F60;
+}
+.razdelnyyColorActive{
   outline: 3px solid #F60;
 }
 .ulColor{
@@ -325,6 +330,24 @@ margin: 15px 0 0 0;
   border: 1px solid #CCCCCC;
 }
 .mainImgModal img{
+}
+.razdelnyyHar p{
+    color: #888888;
+  font-size: 16px;
+}
+.razdelnyyHarP{
+  color: #888888;
+}
+.tableHead h5{
+  font-size: 18px;
+}
+.razdelnyyHar{
+  border-bottom: 3px dotted #dddee0;
+  border-top: 3px dotted #dddee0;
+}
+.blockHar{
+    border-bottom: 3px dotted #dddee0;
+  margin-bottom: 20px;
 }
 /*   .colorPhoto { cursor: pointer; }
 :focus { outline: 2px solid red; } */
@@ -384,6 +407,9 @@ border: 1px solid #CCCCCC;
 .modalFirma{
   font-size: 20px;
   margin: 0 0 10px 0;
+}
+.razdelnyysmalImg img{
+  border: 1px solid #CCCCCC;
 }
 .price{
     color: #999999;

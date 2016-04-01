@@ -62,14 +62,14 @@
 
    <div class="col s10 offset-s1">
        {{#each modalNewCollections}}
-                    <h3 class="center-align">{{modalHelper.tovarHeader}}</h3>
+                    <h3 class="center-align razdelnyyHeader">{{modalHelper.tovarHeader}}</h3>
                 <div class="row">
-                <div class="col s1">
+                <div class="col s1 razdelnyysmalImg">
+                    <img src="{{smallImg1}}" class="responsive-img" alt="">
                     <img src="{{smallImg2}}" class="responsive-img" alt="">
-                    <img src="{{smallImg2}}" class="responsive-img" alt="">
-                    <img src="{{smallImg2}}" class="responsive-img" alt="">
-                    <img src="{{smallImg2}}" class="responsive-img" alt="">
-                    <img src="{{smallImg2}}" class="responsive-img" alt="">
+                    <img src="{{smallImg3}}" class="responsive-img" alt="">
+                    <img src="{{smallImg4}}" class="responsive-img" alt="">
+                    <img src="{{smallImg5}}" class="responsive-img" alt="">
                 </div>
                     <div class="col s5">
                         <div class="mainImgModal">
@@ -325,6 +325,7 @@
                    <p><span class="charColor col s3"> Возврат товара:</span> <span class="col s9 textDelivery"><img src="/vozvratTovara.png" width="20" alt="">Вы можете вернуть товар, оплатив стоимость обратной пересылки.7 дней на возврат или обмен товара без лишних вопросов и проблем.</span></p>
             
                 </div>
+                
 
 
               
@@ -362,6 +363,108 @@
         </div>
         
         </form>
+        <div class="col s12 blockHar">
+                    <div class="razdelnyyHar">
+                        <p>Характеристика товара:</p>
+
+                    </div>
+                  <!--   {{#if har1}}
+                              <span class="razdelnyyHarP">Материал:</span><p>{{har1}}</p>
+                              {{/if}}
+                                          {{#if har2}}
+                              <p>{{har2}}</p>
+                              {{/if}}
+                                          {{#if har3}}
+                              <p>{{har3}}</p>
+                              {{/if}}
+                                          {{#if har4}}
+                              <p>{{har4}}</p>
+                              {{/if}}
+                                          {{#if har5}}
+                              <p>{{har5}}</p>
+                              {{/if}}
+                                          {{#if har6}}
+                              <p>{{har6}}</p>
+                              {{/if}}
+                                          {{#if har7}}
+                              <p>{{har7}}</p>
+                              {{/if}}
+                                          {{#if har8}}
+                              <p>{{har8}}</p>
+                              {{/if}}
+                              <img src="{{smallImg4}}" class="responsive-img" alt=""> -->
+                              <div class="col s6">
+                                {{#if har1}}
+                                  <p>
+                                    <span class="razdelnyyHarP">{{harName1}}: </span>
+                                    <span>{{har1}}</span>
+                                  </p>
+                                {{/if}}
+                                 {{#if har3}}
+                                  <p>
+                                    <span class="razdelnyyHarP">{{harName3}}: </span>
+                                    <span>{{har3}}</span>
+                                  </p>
+                                {{/if}}
+                                 {{#if har5}}
+                                  <p>
+                                    <span class="razdelnyyHarP">{{harName5}}: </span>
+                                    <span>{{har5}}</span>
+                                  </p>
+                                {{/if}}
+                                 {{#if har7}}
+                                  <p>
+                                    <span class="razdelnyyHarP">{{harName7}}: </span>
+                                    <span>{{har7}}</span>
+                                  </p>
+                                {{/if}}
+                                 {{#if har9}}
+                                  <p>
+                                    <span class="razdelnyyHarP">{{harName9}}: </span>
+                                    <span>{{har9}}</span>
+                                  </p>
+                                {{/if}}
+                              </div>
+                              <div class="col s6">
+                                 {{#if har2}}
+                                  <p>
+                                    <span class="razdelnyyHarP">{{harName2}}: </span>
+                                    <span>{{har2}}</span>
+                                  </p>
+                                {{/if}}
+                                 {{#if har4}}
+                                  <p>
+                                    <span class="razdelnyyHarP">{{harName4}}: </span>
+                                    <span>{{har4}}</span>
+                                  </p>
+                                {{/if}}
+                                 {{#if har6}}
+                                  <p>
+                                    <span class="razdelnyyHarP">{{harName6}}: </span>
+                                    <span>{{har6}}</span>
+                                  </p>
+                                {{/if}}
+                                 {{#if har8}}
+                                  <p>
+                                    <span class="razdelnyyHarP">{{harName8}}: </span>
+                                    <span>{{har8}}</span>
+                                  </p>
+                                {{/if}}
+                                 {{#if har10}}
+                                  <p>
+                                    <span class="razdelnyyHarP">{{harName10}}: </span>
+                                    <span>{{har10}}</span>
+                                  </p>
+                                {{/if}}
+                              </div>
+
+                </div>
+                <div class="tableHead">
+                    <h5>1.Размер отклонение: все размеры измеряются стороны, может быть 1-2 см отклонения.</h5>
+                              <h5>2.Фотографии с рельс элементы, цвет может слегка отличаться из-за отдельного монитора и фотографирование </h5>
+                </div>
+                              <img src="{{tableSize}}" class="responsive-img" alt="">
+
         
 
     </div>

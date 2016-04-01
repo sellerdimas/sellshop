@@ -4,7 +4,7 @@ Template.razdelnyy.helpers({
         }
     
   });
-Template.razdelnyy.onRendered(function () {
+/*Template.razdelnyy.onRendered(function () {
  $('.colorPhoto img').click(function (e) {
     $(".colorPhoto img").removeClass("active"); //удаляем класс во всех вкладках
         $(this).addClass('active');
@@ -15,7 +15,7 @@ Template.razdelnyy.onRendered(function () {
     })
 
   
-})
+})*/
 
 Template.razdelnyy.events({
     'click .modalPhoto img': function (e, tmpl) {
@@ -35,6 +35,14 @@ Template.razdelnyy.events({
     'click .colorPhoto img': function (e, tmpl) {
            $(".colorPhoto img").removeClass("colorActive"); //удаляем класс во всех вкладках
         $(e.target).addClass('colorActive');
+        var imgSrc = $(e.target).attr('src');
+            $('#mainImg').attr('src', imgSrc);
+    }
+});
+Template.razdelnyy.events({
+    'click .razdelnyysmalImg img': function (e, tmpl) {
+           $(".razdelnyysmalImg img").removeClass("razdelnyyColorActive"); //удаляем класс во всех вкладках
+        $(e.target).addClass('razdelnyyColorActive');
         var imgSrc = $(e.target).attr('src');
             $('#mainImg').attr('src', imgSrc);
     }
