@@ -266,7 +266,13 @@ animation-duration:2s;
 
 }
 .sizeColor {
-  border-top: 1px solid #E0E0E0;
+  /* border-top: 1px solid #E0E0E0; */
+}
+.razdelnyyCena{
+  margin: 0;
+  font-size: 22px;
+  color: #F60;
+  font-family: OpenSansBold;
 }
 .sizeColor p{
   font-size: 16px;
@@ -277,20 +283,40 @@ animation-duration:2s;
 }
 .deliveryTovar{
   line-height: 1;
-margin: 20px 0 0 0;
+margin: 15px 0 0 0;
+
 }
 .deliveryTovar2{
   line-height: 1;
   margin:  0 0  20px 0;
+
+}
+.textDelivery{
+  position: relative;
+}
+.textDelivery img {
+  position: absolute;
+  left: -10px;
+  top: 0px;
 }
 #deliveryTovar{
-  margin-left: 0;
+  padding: 0;
 }
-.modalBorder{
+#deliveryTovar2{
+  padding: 0;
+}
+#razdelenyyAkcia{
+  min-height: 80px;
+  background: #f5f5f5;
+  padding: 20px 0;
+  margin-left: 0px;
+}
+
+/* .modalBorder{
   border-bottom: 1px #f5f5f5;
-}
+} */
 .colorActive{
-  outline: 3px solid #FF6908;
+  outline: 3px solid #F60;
 }
 .ulColor{
   margin: 0;
@@ -357,7 +383,7 @@ border: 1px solid #CCCCCC;
 }
 .modalFirma{
   font-size: 20px;
-  margin: 0;
+  margin: 0 0 10px 0;
 }
 .price{
     color: #999999;
@@ -569,6 +595,14 @@ border: 1px solid #CCCCCC;
   text-decoration: line-through;
   margin-left: 10px;
 }
+
+.razdelnyyGlass{
+  color: #000;
+  line-height: 1;
+}
+select {
+  margin-bottom: 10px;
+}
 .modal p{
     font-size: 16px;
     margin: 5px 5px 5px 0 ;
@@ -620,11 +654,12 @@ border: 1px solid #CCCCCC;
   height: 40px;
   padding: 8px 10px 10px 10px;
   border-radius: 5px;
-  background: #E6324B;
+  background: #F60;
   font-weight: 600;
   color: #ffffff;
   cursor: pointer;
   font-size: 18px;
+  margin-top: 15px;
 }
 .modalButt:hover{
   background: #E1223C;
@@ -645,7 +680,7 @@ border: 1px solid #CCCCCC;
 }
 #tableSize{
     font-size: 20px;
-    color: #E6324B;
+    color: #F60;
     cursor: pointer;
     text-decoration: underline;
     margin-bottom: 0

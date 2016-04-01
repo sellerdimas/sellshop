@@ -104,12 +104,24 @@
                             {{/if}}
                         </div>
                         
-                        <div class="modalBorder col s12">
-                            <p class="modalPrice">
-                                <span class="mPirce" id="mPrice">{{price}} грн.</span>
-                                <span class="mAkcii" id="mAkcii">{{akcii}} грн.</span>
-                            </p>
-                        </div>
+                   <!--      <div class="modalBorder col s12">
+                       <p class="modalPrice">
+                           <span class="mPirce" id="mPrice">{{price}} грн.</span>
+                           <span class="mAkcii" id="mAkcii">{{akcii}} грн.</span>
+                       </p>
+                   </div> -->
+                        
+                            <div class="col s12" id="razdelenyyAkcia">
+                                <div class="col s2">
+                                    <p class="charColor col s3">Цена:</p>
+                                </div>
+                            <div class="col s10">
+                                <p class="razdelnyyCena">{{price}} грн.  <span class="mAkcii">{{akcii}} грн.</span></p>
+                                <span class="razdelnyyGlass"><img src="/razdelnyyPresent.png" width="20" alt="">Солнечные очки в подарок.Акция до 14 апреля.Спешите.</span>
+                                
+                            </div>
+                            </div>
+                        
                             <div class="col s12">
                             <div class="sizeColor">
                                 <p>Выберите размер (Size), а затем цвет (Color)</p>
@@ -119,9 +131,12 @@
                             
                         
                         <div class="col s12">
-                        {{#if color1}}
-                            <div>Цвет:</div>
+                        <div class="col s2">
+                            {{#if color1}}
+                            <div class="charColor">Цвет:</div>
                             {{/if}}
+                        </div>
+                        <div class="col s10">
                             <ul class="ulColor">
                                 {{#if color1}}
                                     <li class="colorPhoto">
@@ -165,8 +180,11 @@
                                 {{/if}}
                             </ul>
                         </div>
-                        <div class="col s4">
-                            <label>Бюст</label>
+                        <div class="col s2">
+                            <div class="charColor">Бюст:</div>
+                        </div>
+                        <div class="col s2">
+                        
                             <select class="browser-default selectSizeByst">
                                 {{#if sByst}}
                                 <option value="{{s}}">{{sByst}}</option>
@@ -186,8 +204,15 @@
                                 {{/if}}
                             </select>
                         </div>
-                        <div class="col s4">
-                            <label>Трусы</label>
+                        
+         
+                        </div>
+                        <div class="col s12">
+                            <div class="col s2">
+                            <div class="charColor">Трусы:</div>
+                        </div>
+                        <div class="col s2">
+                          
                             <select class="browser-default selectSizeTrysu">
                                 {{#if sTrysu}}
                                 <option value="{{s}}">{{sTrysu}}</option>
@@ -206,31 +231,63 @@
                                 {{/if}}
                             </select>
                         </div>
-                        <div class="col s4">
-                            <label>Количество</label>
-                            <select class="browser-default quantity">
-                              <option value="1">1</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                              <option value="5">5</option>
-                              <option value="6">6</option>
-                              <option value="7">7</option>
-                              <option value="8">8</option>
-                              <option value="9">9</option>
-                              <option value="10">10</option>
-                              <option value="11">11</option>
-                              <option value="12">12</option>
-                              <option value="13">13</option>
-                              <option value="14">14</option>
-                              <option value="15">15</option>
-                              <option value="16">16</option>
-                              <option value="17">17</option>
-                              <option value="18">18</option>
-                              <option value="19">19</option>
-                              <option value="20">20</option>
-                            </select>
                         </div>
+                        <div class="col s12">
+                                               <div class="col s2">
+                            <div class="charColor">Кол.:</div>
+
+                            </div>
+                            <div class="col s2">
+       <select class="browser-default quantity">
+         <option value="1">1</option>
+         <option value="2">2</option>
+         <option value="3">3</option>
+         <option value="4">4</option>
+         <option value="5">5</option>
+         <option value="6">6</option>
+         <option value="7">7</option>
+         <option value="8">8</option>
+         <option value="9">9</option>
+         <option value="10">10</option>
+         <option value="11">11</option>
+         <option value="12">12</option>
+         <option value="13">13</option>
+         <option value="14">14</option>
+         <option value="15">15</option>
+         <option value="16">16</option>
+         <option value="17">17</option>
+         <option value="18">18</option>
+         <option value="19">19</option>
+         <option value="20">20</option>
+       </select>
+   </div> 
+                        </div>
+                        
+   <!--                      <div class="col s4">
+       <label>Количество</label>
+       <select class="browser-default quantity">
+         <option value="1">1</option>
+         <option value="2">2</option>
+         <option value="3">3</option>
+         <option value="4">4</option>
+         <option value="5">5</option>
+         <option value="6">6</option>
+         <option value="7">7</option>
+         <option value="8">8</option>
+         <option value="9">9</option>
+         <option value="10">10</option>
+         <option value="11">11</option>
+         <option value="12">12</option>
+         <option value="13">13</option>
+         <option value="14">14</option>
+         <option value="15">15</option>
+         <option value="16">16</option>
+         <option value="17">17</option>
+         <option value="18">18</option>
+         <option value="19">19</option>
+         <option value="20">20</option>
+       </select>
+   </div> -->
                     <div class="col s12">
                     <section class="ac-container">
 
@@ -261,11 +318,11 @@
 
                 </div>
                 <div class="deliveryTovar col s12" id="deliveryTovar">
-                    <p class=""><span class="charColor col s3">Доставка товара:</span> <span class="col s9">Бесплатная доставка по Киеву и Украине 1-2 дня.Отправка через несколько часов после подтверждения заказа</span></p>
+                    <p class=""><span class="charColor col s3">Доставка товара:</span> <span class="col s9 textDelivery"><img src="/tovarDelivery.png" width="20" alt="">Бесплатная доставка по Киеву и Украине 1-2 дня.Отправка через несколько часов после подтверждения заказа</span></p>
             
                 </div>
-<div class="deliveryTovar2 col s12">
-                   <p><span class="charColor col s3">Возврат товара:</span> <span class="col s9">Вы можете вернуть товар, оплатив стоимость обратной пересылки.7 дней на возврат или обмен товара без лишних вопросов и проблем.</span></p>
+<div class="deliveryTovar2 col s12" id="deliveryTovar2">
+                   <p><span class="charColor col s3"> Возврат товара:</span> <span class="col s9 textDelivery"><img src="/vozvratTovara.png" width="20" alt="">Вы можете вернуть товар, оплатив стоимость обратной пересылки.7 дней на возврат или обмен товара без лишних вопросов и проблем.</span></p>
             
                 </div>
 
