@@ -39,7 +39,10 @@ src: local("OpenSansBold"), url("fonts/OpenSansBold.ttf");
   margin-left: 25px;
 }
 .number{                                                                                                                                                        
-  margin-left: 25%;                                                                                                                                                       
+  margin-left: 30%;                                                                                                                                                       
+}
+.RazdelnyyNumber2{
+  margin-left: 25px; 
 }
 .textLogo{
   font-family: OpenSansBold;
@@ -311,7 +314,7 @@ margin: 15px 0 0 0;
   padding: 20px 0;
   margin-left: 0px;
 }
-.razdelnyyHeader{
+#razdelnyyHeader{
   margin-top: 0;
 }
 /* .modalBorder{
@@ -344,6 +347,13 @@ margin: 15px 0 0 0;
 .razdelnyyHar{
   border-bottom: 3px dotted #dddee0;
   border-top: 3px dotted #dddee0;
+}
+.razdelnyyMenejer p{
+  font-size: 12px;
+  line-height: 1;
+}
+.razdelnyyMenejer{
+  margin-top: 10px;
 }
 .blockHar{
     border-bottom: 3px dotted #dddee0;
@@ -676,7 +686,7 @@ select {
 
 }
 .modalButt{
-  width: 170px;
+  width: 222px;
   height: 40px;
   padding: 8px 10px 10px 10px;
   border-radius: 5px;
@@ -687,6 +697,7 @@ select {
   font-size: 18px;
   margin-top: 15px;
 }
+
 .modalButt:hover{
   background: #E1223C;
 }
@@ -709,10 +720,8 @@ select {
     color: #F60;
     cursor: pointer;
     text-decoration: underline;
-    margin-bottom: 0
-}
-#tableSize{
-  margin-right: 0;
+margin: 0;
+display: inline-block;
 }
 /* ===================================modal=============================== */
 #map{

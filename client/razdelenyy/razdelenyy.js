@@ -27,8 +27,11 @@ Template.razdelnyy.events({
 
 Template.razdelnyy.events({
     'click #tableSize': function (e, tmpl) {
-       var imgSrc = $(e.target).attr('name');
-            $('.tablSize').attr('src', imgSrc);
+      /* var imgSrc = $(e.target).attr('name');
+            $('.tablSize').attr('src', imgSrc);*/
+                       var destination = $('.tableSize').offset().top;
+        var minus = destination - 60;
+        $("body,html").animate({scrollTop: minus }, 900);
     }
 });
 Template.razdelnyy.events({

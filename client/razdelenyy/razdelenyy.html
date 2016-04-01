@@ -55,14 +55,14 @@
   })();
 
 </script>
-{{>nav}}
+{{>rezdelnyyNav}}
         {{>modal2}}
         {{>modal3}}
 <div class="row">
 
    <div class="col s10 offset-s1">
        {{#each modalNewCollections}}
-                    <h3 class="center-align razdelnyyHeader">{{modalHelper.tovarHeader}}</h3>
+                    <h3 class="center-align" id="razdelnyyHeader">{{modalHelper.tovarHeader}}</h3>
                 <div class="row">
                 <div class="col s1 razdelnyysmalImg">
                     <img src="{{smallImg1}}" class="responsive-img" alt="">
@@ -70,6 +70,7 @@
                     <img src="{{smallImg3}}" class="responsive-img" alt="">
                     <img src="{{smallImg4}}" class="responsive-img" alt="">
                     <img src="{{smallImg5}}" class="responsive-img" alt="">
+                    <img src="{{smallImg6}}" class="responsive-img" alt="">
                 </div>
                     <div class="col s5">
                         <div class="mainImgModal">
@@ -312,8 +313,14 @@
                 </div>
 
                 <div class="col s12">
+                    <div class="col s6">
                     <div class="modalButt">
-                        <span class="send">Отправить</span>
+                        <span class="send">Оставить заявку</span>
+                    </div>
+                        
+                    </div>
+                    <div class="razdelnyyMenejer col s6">
+                        <p>-Менеджер перезвонит вам в течении 2 часов</p>
                     </div>
 
                 </div>
@@ -463,7 +470,7 @@
                     <h5>1.Размер отклонение: все размеры измеряются стороны, может быть 1-2 см отклонения.</h5>
                               <h5>2.Фотографии с рельс элементы, цвет может слегка отличаться из-за отдельного монитора и фотографирование </h5>
                 </div>
-                              <img src="{{tableSize}}" class="responsive-img" alt="">
+                              <img src="{{tableSize}}" class="responsive-img tableSize" alt="">
 
         
 
