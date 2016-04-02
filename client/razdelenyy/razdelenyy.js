@@ -16,6 +16,67 @@ Template.razdelnyy.helpers({
 
   
 })*/
+Template.razdelnyy.events({
+    'click .arrowRazdelnyy': function (e, tmpl) {
+         $("body,html").animate({scrollTop: 0 }, 500);
+    }
+});
+Template.razdelnyy.events({
+    'click .menejerRazdelnyy': function (e, tmpl) {
+      $('#modal2').openModal();
+    }
+});
+Template.razdelnyy.events({
+    'click .closeRazdelnyy': function (e, tmpl) {
+        var imgSrc = $(e.target).attr('src');
+        if(imgSrc === "/HcloseRazdelnyy.png"){
+            $('.soc').fadeOut(600);
+            $( e.target ).attr('src', '/Hplus.png');
+        }else{
+            $('.soc').fadeIn(600);
+            $( e.target ).attr('src', '/HcloseRazdelnyy.png');
+        }
+         
+    }
+});
+Template.razdelnyy.onRendered(function () {
+  $( '.socSet img' ).hover(
+        function() {
+            var imgSrc = $(this).attr('src');
+            var newImgSrc = imgSrc.slice(1);
+            newImgSrc2 = '/H' + newImgSrc;
+            $( this ).attr('src', newImgSrc2);
+        },function() {
+            var imgSrc = $(this).attr('src');
+            var newImgSrc = imgSrc.slice(2);
+            newImgSrc2 = "/" + newImgSrc;
+            $( this ).attr('src', newImgSrc2);
+        }
+    );
+    $( '.closeAndArrow img' ).hover(
+        function() {
+            var imgSrc = $(this).attr('src');
+            var newImgSrc = imgSrc.slice(1);
+            newImgSrc2 = '/H' + newImgSrc;
+            $( this ).attr('src', newImgSrc2);
+        },function() {
+            var imgSrc = $(this).attr('src');
+            var newImgSrc = imgSrc.slice(2);
+            newImgSrc2 = "/" + newImgSrc;
+            $( this ).attr('src', newImgSrc2);
+        }
+    );
+  $('.arrowRazdelnyy').hide();  
+  $(window).scroll(function () {
+        var flag = $(this).scrollTop();
+        if(flag > 250){
+            $('.arrowRazdelnyy').fadeIn(500);  
+        }else{
+            $('.arrowRazdelnyy').fadeOut(500);
+        }
+    });
+       $('.tooltipped').tooltip({delay: 50});
+});
 
 Template.razdelnyy.events({
     'click .modalPhoto img': function (e, tmpl) {
@@ -23,6 +84,8 @@ Template.razdelnyy.events({
             $('#mainImg').attr('src', imgSrc);
     }
 });
+
+
 
 
 Template.razdelnyy.events({
