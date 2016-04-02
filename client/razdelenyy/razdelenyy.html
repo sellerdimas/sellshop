@@ -64,7 +64,7 @@
        {{#each modalNewCollections}}
                     <h3 class="center-align" id="razdelnyyHeader">{{modalHelper.tovarHeader}}</h3>
                 <div class="row">
-                <div class="col s1 razdelnyysmalImg">
+                <div class="col s2 m1 razdelnyysmalImg">
                     <img src="{{smallImg1}}" class="responsive-img" alt="">
                     <img src="{{smallImg2}}" class="responsive-img" alt="">
                     <img src="{{smallImg3}}" class="responsive-img" alt="">
@@ -72,7 +72,7 @@
                     <img src="{{smallImg5}}" class="responsive-img" alt="">
                     <img src="{{smallImg6}}" class="responsive-img" alt="">
                 </div>
-                    <div class="col s5">
+                    <div class="col s10 m5">
                         <div class="mainImgModal">
                             <img src="{{imgSrc}}" class="responsive-img" alt="" id="mainImg"></div>
               <!--           {{#if smallImg1}}
@@ -95,7 +95,7 @@
                      
 
                 </div>
-                <form class="col s6">
+                <form class="col s12 m6">
                     <div class="row">
 
                         <div class="col s12">
@@ -114,7 +114,7 @@
                         
                             <div class="col s12" id="razdelenyyAkcia">
                                 <div class="col s2">
-                                    <p class="charColor col s3">Цена:</p>
+                                    <p class="charColor razdelnyyCenaName col s3">Цена:</p>
                                 </div>
                             <div class="col s10">
                                 <p class="razdelnyyCena">{{price}} грн.  <span class="mAkcii">{{akcii}} грн.</span></p>
@@ -466,11 +466,14 @@
                               </div>
 
                 </div>
-                <div class="tableHead">
-                    <h5>1.Размер отклонение: все размеры измеряются стороны, может быть 1-2 см отклонения.</h5>
+                <div class="col s12">
+                    <div class="tableHead">
+                                <h5>1.Размер отклонение: все размеры измеряются стороны, может быть 1-2 см отклонения.</h5>
                               <h5>2.Фотографии с рельс элементы, цвет может слегка отличаться из-за отдельного монитора и фотографирование </h5>
-                </div>
                               <img src="{{tableSize}}" class="responsive-img tableSize" alt="">
+                </div>
+                              
+                </div>
 
         
 

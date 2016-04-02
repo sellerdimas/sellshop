@@ -1,7 +1,7 @@
 Template.rezdelnyyNav.events({
 	'click .brand-logo':function(e){
 		e.preventDefault();
-		Router.go('main', 'asd');
+		Router.go('main');
 	}
 });
 

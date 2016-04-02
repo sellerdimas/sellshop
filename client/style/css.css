@@ -317,6 +317,12 @@ margin: 15px 0 0 0;
 #razdelnyyHeader{
   margin-top: 0;
 }
+.razdelnyyCenaName{
+  margin-top: 5px;
+}
+.ModalTovarHeader{
+  margin-top: 0;
+}
 /* .modalBorder{
   border-bottom: 1px #f5f5f5;
 } */
